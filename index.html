@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock, Paper, Scissors!</title>
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
     <h1>Play Rock, Paper, Scissors!</h1>
@@ -16,87 +17,20 @@
 
     <div>
         <h3 class="results">Results</h3>
-        <div class="player-Score">Player Score:</div>
+        <h4 class="player-Score">Player Score:</h4>
         <p id="playerScore">0</p>
-        <div class="computer-Score">Computer Score:</div>
+        <h4 class="computer-Score">Computer Score:</h4>
         <p id="computerScore">0</p>
 
     </div>
 
-    <script>
-        let rock = document.querySelector('.rock')
-        rock.addEventListener('click', work = () => {
-            playRound('rock', computerPlay());
-        }); // plays with player selection as rock when rock button is pressed
+    <div class="gameInfo">
+        <p class="gameText"></p>
+    </div>
 
-        let paper = document.querySelector('.paper')
-        paper.addEventListener('click', work1 = () => {
-            playRound('paper', computerPlay());
-        });
 
-        let scissors = document.querySelector('.scissors')
-        scissors.addEventListener('click', work2 = () => {
-            playRound('scissors', computerPlay());
-        });
 
-        let computerChoice = ["rock","paper","scissors"];
-
-        // determines computers play
-        let computerPlay = () => computerChoice[Math.floor(Math.random() * computerChoice.length)];
-
-        //plays a round of Rock Papaer Scissors and adds to scoreboard
-        let playRound = (playerSelection, computerSelection) => {
-
-            if (playerSelection === computerSelection) {
-                return("It's a draw");
-            } else if (playerSelection === "rock") {
-                if (computerSelection === "paper") {
-                    computerScore.textContent = parseInt(computerScore.textContent)+1;
-                    WinningScore();
-                } else {
-                    playerScore.textContent = parseInt(playerScore.textContent)+1;
-                    WinningScore();  
-                }
-            } else if (playerSelection === "paper") {
-                if (computerSelection === "rock") {
-                    playerScore.textContent = parseInt(playerScore.textContent)+1; 
-                    WinningScore();               
-                } else {
-                    computerScore.textContent = parseInt(computerScore.textContent)+1;
-                    WinningScore();
-                }
-            } else {
-                if (computerSelection === "rock") {
-                    computerScore.textContent = parseInt(computerScore.textContent)+1;
-                    WinningScore();
-                } else {
-                    playerScore.textContent = parseInt(playerScore.textContent)+1;    
-                    WinningScore();            
-                }
-            }
-        
-                
-        }
-
-        // Determines if someone has reached the winning score and resets the score
-        const WinningScore = () => {
-            if (parseInt(playerScore.textContent) === 5) {
-                alert('You Win! You beat the computer!');
-                computerScore.textContent = 0;
-                playerScore.textContent = 0;
-            } 
-            if (parseInt(computerScore.textContent) === 5) {
-                alert('You Lose! The computer beat you!');
-                computerScore.textContent = 0;
-                playerScore.textContent = 0;
-            }
-        };
-
-        
-
-        let playerScore = document.getElementById('playerScore');
-        let computerScore = document.getElementById('computerScore');
-    </script>
+    <script src="rpsJavaScript.js"></script>
 </body>
 </html>
 
