@@ -1,5 +1,5 @@
 .header {
-    background-color: lightgreen;
+    background-color: rgb(109, 255, 109);
     font-weight: 900;
     font-size: 40px;
     font-family: "Monaco", "Courier New", monospace;
@@ -12,6 +12,9 @@
     margin-left: -10px;
     margin-right: -10px;
     margin-top: -10px;
+    border-bottom-style:solid;
+    border-bottom-color: green;
+    border-bottom-width: 8px;
 }
 
 .choiceRock, .choicePaper, .choiceScissors {
@@ -38,18 +41,93 @@
     margin-bottom: 16px;
 }
 
-.rockImg {
+.scissorsImg, .paperImg {
     width: 225px;
     height: 225px;
     display: flex;
     margin: 8px 12px;
 }
+
+.rockImg {
+    width: 225px;
+    height: 150px;
+    padding-top : 50px;
+    padding-bottom: 25px;
+    display: flex;
+    margin: 8px 12px;
+}
+
 .buttons {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.gameText {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0px 0px 8px 0px;
+    height: 64px;
+}
+
+.results {
+    font-size: 42px;
+    font-weight: 900;
+    text-align: center;
+    margin: 0px -10px;
+    background-color: rgb(109, 255, 109);
+    padding-top: 16px;
+    border-top-style:solid;
+    border-top-color: green;
+    border-top-width: 8px;
+}
+
+.score {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 121px;
+    margin: 0px -10px;
+    background-color: rgb(109, 255, 109);
+    border-bottom-style:solid;
+    border-bottom-color: green;
+    border-bottom-width: 8px;
+}
+
+.playerScore, .computerScore {
+    font-size: 42px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.resetGame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.reset {
+    border-radius: 16px;
+    background-color: rgb(153, 134, 134);
+    border-color: rgb(49, 27, 27);
+    border-width: 8px;
+    border-style: solid;
+    display: flex;
+    width: 250px;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Monaco", "Courier New", monospace;
+    font-weight: 700;
+    font-size: 32px;
+}
+
 body {
     background-color: rgb(221, 248, 235);
+    font-family: "Monaco", "Courier New", monospace;
 }
