@@ -1,0 +1,55 @@
+.header {
+    background-color: lightgreen;
+    font-weight: 900;
+    font-size: 40px;
+    font-family: "Monaco", "Courier New", monospace;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
+}
+
+.choiceRock, .choicePaper, .choiceScissors {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background-color: rgb(153, 134, 134);
+    border-color: rgb(49, 27, 27);
+    border-width: 8px;
+    border-style: solid;
+    flex-wrap: wrap;
+}
+
+.rock, .paper, .scissors {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "Monaco", "Courier New", monospace;
+    background-color: rgba(0, 128, 0, 0);
+    border-width: 0px;
+    margin-bottom: 16px;
+}
+
+.rockImg {
+    width: 225px;
+    height: 225px;
+    display: flex;
+    margin: 8px 12px;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: rgb(221, 248, 235);
+}
