@@ -1,3 +1,4 @@
 # Rock-Paper-Scissors
 Making Rock Paper Scissors
-Currently only availible in console
+Now with functioning ui
+Play a first to 5 game
